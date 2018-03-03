@@ -1,0 +1,75 @@
+@media screen and (orientation: portrait) {
+    @import "variables";
+
+    body {
+        font-size: 2.1vh;
+    }
+
+    .login-label {
+        text-align: center;
+    }
+
+    .login-form {
+        width: 80%;
+        opacity: 1;
+
+        .form-label {
+            text-align: center;
+        }
+
+        .group {
+            margin: 1.75rem 0;
+        }
+
+        button {
+            padding: 0.5em;
+            height: auto;
+        }
+    }
+
+    .chat {
+        width: 100vw;
+
+        &-header {
+            height: $small-header;
+        }
+
+        .messages {
+            font-size: 2.5vh;
+
+            .message {
+                padding: 0.125em 0.55em 0.125em 0.6em;
+                margin-left: 5vh;
+
+                .avatar {
+                    width: 5vh;
+                    height: 5vh;
+                    left: -6.75rem;
+                }
+
+                .msg-user {
+                    top: -37.5px;
+                    left: 0;
+                }
+            }
+        }
+
+        .message-box {
+            .message-input {
+                height: 1.75em;
+            }
+        }
+    }
+
+    .sidebar {
+        width: auto;
+
+        &-header {
+            height: $small-header;
+        }
+
+        ul {
+            display: none;
+        }
+    }
+}

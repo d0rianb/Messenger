@@ -1,0 +1,17 @@
+$header-height: 6vh;
+$main-color: #303F9F;
+@mixin center {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin unselectable {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+// Responsive
+$small-header: 7vh;

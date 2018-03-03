@@ -1,0 +1,102 @@
+.background {
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    top: -5%;
+    left: -5%;
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    background: rgba(0, 0, 0, 1);
+    opacity: 0.6;
+    z-index: 11;
+    transition: all 500ms ease;
+}
+
+.widget {
+    font-smooth: always;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    cursor: default;
+    transition: box-shadow 100ms cubic-bezier(.4, .0, .2, 1);
+    border-radius: 5px;
+    outline: none;
+    background: white;
+    box-shadow: 0 1.5px 1.5px 0 rgba(0, 0, 0, .16), 0 0 0 1px rgba(0, 0, 0, .08);
+    -webkit-font-smoothing: antialiased;
+    overflow: scroll;
+}
+
+.settings {
+    position: fixed;
+    width: 60%;
+    height: auto;
+    top: 10%;
+    left: 20%;
+    overflow: visible;
+    z-index: 12;
+    box-sizing: border-box;
+
+    .w-title {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 2em);
+        font-size: 2em;
+        margin: 0.5em 0.5em 0.25em 1em;
+    }
+
+    .w-content {
+        overflow: scroll;
+        margin: 0;
+        padding: 0 1em;
+        width: calc(100% - 2em);
+        height: 90%;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            padding: 1em 2em;
+            border-top: solid 0.5px rgba(20, 20, 20, .1);
+        }
+    }
+
+    input[type='text'],
+    input[type='number'] {
+        text-align: right;
+        -webkit-appearance: none;
+        border: solid 0 #fff;
+    }
+
+    button {
+        border-radius: 2px;
+        border: solid 0 #fff;
+        font-size: 0.8em;
+        background-color: rgba(10, 10, 10, 0.01);
+        padding: 0.5em 1em;
+        transition: background-color ease 250ms;
+
+        &:hover {
+            background-color: rgba(10, 10, 10, 0.15);
+        }
+    }
+
+    button,
+    button:active,
+    button:focus {
+        -webkit-appearance: none;
+        outline-width: 0;
+    }
+
+    .modified {
+        max-width: 50%;
+    }
+}

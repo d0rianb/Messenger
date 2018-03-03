@@ -1,0 +1,63 @@
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 25vw;
+  box-shadow: 1px 0 5px rgba(10, 10, 10, 0.26);
+  overflow: scroll; }
+  .sidebar-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 25vw;
+    padding: 0.5em;
+    font-size: 1.25em;
+    z-index: 10; }
+  .sidebar ul {
+    position: relative;
+    top: 7vh;
+    width: 100%;
+    height: calc(100% - 5vh);
+    margin: 0;
+    padding: 0; }
+  .sidebar .card {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    font-size: 1em;
+    padding: 0.75em;
+    background-color: #fff;
+    transition: all ease 250ms; }
+    .sidebar .card:hover {
+      background-color: #EEEEEE; }
+    .sidebar .card-avatar {
+      border-radius: 50%;
+      width: 5vh;
+      height: 5vh;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      border: 1px solid rgba(200, 200, 200, 0.5); }
+      .sidebar .card-avatar img {
+        width: 100%;
+        height: auto; }
+    .sidebar .card-infos {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      width: calc(100% - 6vh); }
+      .sidebar .card-infos .info-state {
+        color: #9E9E9E;
+        font-size: 0.9em;
+        padding-left: 0.25em; }
+
+/*# sourceMappingURL=sidebar.css.map */
