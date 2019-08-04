@@ -5,6 +5,7 @@
     "main": "nodeJS/serveur.js",
     "scripts": {
         "start": "node nodeJS/serveur.js",
+        "dev": "node nodeJS/serveur.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Dorian",
@@ -13,5 +14,8 @@
         "moment": "^2.20.1",
         "mysql": "^2.15.0",
         "socket.io": "^2.0.4"
+    },
+    "devDependencies": {
+        "eslint-config-standard": "^11.0.0"
     }
 }

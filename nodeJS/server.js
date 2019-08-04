@@ -81,7 +81,7 @@ function rename(old_, new_) {
             io.sockets.emit('userList', crypt.crypt(users))
         } else {
             feedback = 'Erreur en renommant "' + old_ + '" en "' + new_ + '"'
-            console.log(feedback);
+            console.log(feedback)
         }
     }
     return feedback
