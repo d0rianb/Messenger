@@ -1,7 +1,7 @@
 .login {
   display: -webkit-flex;
   display: -ms-flex;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-flow: column;
@@ -15,7 +15,8 @@
   background: #fafafa;
   opacity: 0.9;
   z-index: 20;
-  overflow: hidden; }
+  overflow: hidden;
+  }
 
 .login-label {
   display: -webkit-flex;

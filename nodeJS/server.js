@@ -1,5 +1,5 @@
 const http = require('http')
-const moment = require('moment');
+const moment = require('moment')
 const crypt = require('./crypt')
 const port = 5111
 
@@ -49,7 +49,7 @@ function currentDate() {
 /**
  * [isCommand description]
  * @param  {[String]}  msg [description]
- * @return {Boolean || Object} [description]
+ * @return {Boolean | Object} [description]
  */
 function isCommand(msg) {
     if (msg.substring(0, 2) == '::') {
@@ -81,7 +81,7 @@ function rename(old_, new_) {
             io.sockets.emit('userList', crypt.crypt(users))
         } else {
             feedback = 'Erreur en renommant "' + old_ + '" en "' + new_ + '"'
-            console.log(feedback)
+            console.log(feedbacks)
         }
     }
     return feedback

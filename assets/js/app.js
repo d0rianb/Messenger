@@ -12,10 +12,10 @@ let notificationAllowed = true,
 let hidden, visibilityChange;
 if (typeof document.hidden !== "undefined") {
     hidden = "hidden";
-    visibilityChange = "visibilitychange";
+    visibilityChange = "visibilitychange"
 } else if (typeof document.webkitHidden !== "undefined") {
-    hidden = "webkitHidden";
-    visibilityChange = "webkitvisibilitychange";
+    hidden = "webkitHidden"
+    visibilityChange = "webkitvisibilitychange"
 }
 
 
@@ -224,3 +224,4 @@ $(window).load(() => {
 });
 
 // cmd + maj + p
+// Fold

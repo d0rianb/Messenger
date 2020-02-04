@@ -4,7 +4,6 @@ function updateScrollbar() {
 
 function setDate(date) {
     $('<div class="timestamp">' + date.hour + ':' + date.min + '</div>').appendTo($('.message:last'))
-
 }
 
 function insertMessage(msg) {
